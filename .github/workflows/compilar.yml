@@ -5,4 +5,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-      - run: dotnet build
+      - name: compilamos
+        run: dotnet build
+      - name: ejecutamos las pruebas
+        run: dotnet test
