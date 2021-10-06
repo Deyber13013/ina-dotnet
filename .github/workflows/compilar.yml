@@ -1,5 +1,6 @@
 name: compilarion y pruebas c#
 on: push
+jobs:
   Compilacion:
     runs-on: windows-latest
     steps:
