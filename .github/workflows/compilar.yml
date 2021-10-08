@@ -1,4 +1,4 @@
-name: compilarion y pruebas c#
+name: compilacion y pruebas c#
 on: push
 jobs:
   Compilacion:
