@@ -11,7 +11,7 @@ jobs:
         with:
           dodnet-version: '5.1.x'
       - name: Instalamos dependencias de NET
-        run: dodnet restore
+        run: dotnet restore
       - name: compilamos
         run: dotnet build
       - name: ejecutamos las pruebas
@@ -19,6 +19,6 @@ jobs:
       - name: Publicar un release
         uses: elgohr/Github-Release-Action@master
         env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIThub_TOKEN }}
         with:
           args: Nuevo Release
