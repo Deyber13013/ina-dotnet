@@ -21,4 +21,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.github_TOKEN }}
         with:
-          args: Nuevo Release
+          args: Nuevo Release 2
