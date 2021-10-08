@@ -7,6 +7,11 @@ jobs:
     steps:
       - run: echo "El secreto Google es ${{ secrets.GOOGLE_TOKEN }}"
       - uses: actions/checkout@v2
+      - uses: actions/setup-dodnet@v1
+        with:
+          dodnet-version: '5.0.301'
+      - name: Instalamos dependencias de NET
+        run: dodnet restore
       - name: compilamos
         run: dotnet build
       - name: ejecutamos las pruebas
